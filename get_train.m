@@ -9,11 +9,11 @@ function [x,y,x_test,y_test] = get_train(matrix,number)
     x_test = [];
     y_test = [];
     for i = 1:number 
-        x = [x,matrix(logo(i),1)];
-        y = [y,matrix(logo(i),2)];
+        x = [x,matrix(logo(i),2)];
+        y = [y,matrix(logo(i),1)];
     end
     for i = 1:test_number
-        x_test = [x_test,matrix(newrand(i),1)];
-        y_test = [y_test,matrix(newrand(i),2)];
+        x_test = [x_test,matrix(newrand(i),2)];
+        y_test = [y_test,matrix(newrand(i),1)];
     end
 end
